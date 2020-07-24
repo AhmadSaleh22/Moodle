@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Profile </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../css/all.css" />
+</head>
+
+<body>
+
+    <div class="dashboard">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="student.html"><img src="../img/university.png" width="30" /></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a style="background: url('../img/std.jpg') center; background-size: cover; height: 40px; width: 40px;border-radius: 50%;"
+                                class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../index.html">Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="cnt">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="userInfo bg-light text-center">
+                            <div class="img"
+                                style="background: url('../img/std.jpg') center; background-size: cover; height: 120px; width: 120px;border-radius: 50%;margin: auto;">
+                            </div>
+                            <h4>Mohammed Ahmed</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum sapien auctor sem
+                                faucibus pharetra .</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-6 col-sm-12">
+                        <div class="courses info bg-light">
+                            <div class="top row">
+                                <h3 class="col-11">My Courses</h3>
+                                <div class="col-1"><button class="btn btn-primary" onclick="addNew()" id="add"><i
+                                            class="fa fa-plus"></i></button></div>
+                            </div>
+                            <hr />
+                            <div id="validation"></div>
+                            <form action="" method="POST" name="calc" onsubmit="return cal()">
+                                <div class="row" id="row">
+                                    <div class="col-lg-6 col-md-12">
+                                        <input type="text" name="deg" id="deg" class="form-control"
+                                            placeholder="Degree">
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <input type="number" name="hou" id="hou" class="form-control"
+                                            placeholder="Number of Hours">
+                                    </div>
+                                    <div class="col" id="degrees">
+
+                                    </div>
+                                    <div class="col align-self-end">
+                                        <input type="submit" class="form-control btn btn-primary" value="Calculate" />
+                                    </div>
+                                </div>
+                            </form>
+                            <table class="table" id="degress">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Degree </th>
+                                        <th scope="col">Hours Number</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="copyright text-center">
+                <p>&#169; copyright 2019 . Moe Jehad</p>
+            </div>
+        </footer>
+
+
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>getDegrees()</script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <title>Dashboard </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/all.css"/>
+        <link rel="stylesheet" href="../css/bootstrap.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    </head>
+    <body>
+
+        <div class="dashboard">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                <a class="navbar-brand" href="techer.html"><img src="../img/university.png" width="30"/></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                    <a class="noti" href="#"><i class="fa fa-bell"></i></a>
+                    <li class="nav-item dropdown">
+                        <a style="background: url('../img/man.jpg') center; background-size: cover; height: 40px; width: 40px;border-radius: 50%;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Setting</a>
+                        <a class="dropdown-item" href="../index.html">Logout</a>
+                        </div>
+                    </li>
+                    </ul>
+                    
+                </div>
+        </div>
+     </nav>
+
+<div class="container">
+    <div class="cnt">
+        <h1 class="bigTitle text-center">Add Course</h1>
+       
+        <form  method="post" onsubmit="addCourse()" action="">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <input type="text" id="name" class="form-control" placeholder="Course Name"/>
+                    <input type="text" id="tech" class="form-control" placeholder="Techer Name"/>
+                    <input type="number" id="num" class="form-control" placeholder="hours Number"/>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <textarea id="bio" class="form-control" placeholder="Bio"></textarea>
+                </div>
+                <div class="col-12 text-center">
+                    <input type="submit" value="Add" class="form-control btn btn-primary"/>
+                </div>
+            </div>
+        </form>
+        
+        <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <a href="courses.html" class="lnk btn btn-dark">
+                        <i class="fa fa-book"></i>
+                        View Courses
+                     </a>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <a href="profile.html" class="lnk btn btn-dark">
+                        <i class="fa fa-user"></i>
+                        Profile
+                    </a>
+                </div>
+        </div>
+    </div>
+</div>
+
+    <footer>
+        <div class="copyright text-center">
+            <p>&#169; copyright 2019 . Moe Jehad</p>
+        </div>
+    </footer>
+
+
+        </div>
+
+        <script src="js/script.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/all.js"></script>
+    </body>
+</html>

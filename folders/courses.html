@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <title>Dashboard </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/all.css"/>
+        <link rel="stylesheet" href="../css/bootstrap.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    </head>
+    <body>
+
+        <div class="dashboard">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                <a class="navbar-brand" href="techer.html"><img src="../img/university.png" width="30"/></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                    <a class="noti" href="#"><i class="fa fa-bell"></i></a>
+                    <li class="nav-item dropdown">
+                        <a style="background: url('../img/man.jpg') center; background-size: cover; height: 40px; width: 40px;border-radius: 50%;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Setting</a>
+                        <a class="dropdown-item" href="../index.html">Logout</a>
+                        </div>
+                    </li>
+                    </ul>
+                    
+                </div>
+        </div>
+     </nav>
+
+<div class="container">
+    <div class="cnt">
+        <table class="table" id="courses">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Course Name </th>
+                <th scope="col">Techer Name</th>
+                <th scope="col">Hours Number</th>
+                <th scope="col">Bio</th>
+                <th scope="col">Control</th>
+              </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+
+
+    </div>
+</div>
+
+    <footer>
+        <div class="copyright text-center">
+            <p>&#169; copyright 2019 . Moe Jehad</p>
+        </div>
+    </footer>
+
+
+        </div>
+        <script src="js/script.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/all.js"></script>
+        <script>getCourses()</script>
+
+    </body>
+</html>

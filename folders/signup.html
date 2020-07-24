@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <title>Moodel - signup </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/all.css"/>
+        <link rel="stylesheet" href="../css/bootstrap.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    </head>
+    <body>
+
+        <div class="signup">
+            <div class="container">
+
+                <form action="signup.html" name="signUp" method="POST" onsubmit="return signUpVal()">
+                    <div class="logo text-center">
+                        <img src="../img/university.png" width="70" alt="logo"/>
+                        <h5>Sign up to enjoy with our serivces</h5>
+                        <div id="valid"></div>
+                    </div>
+                    <input type="text" id="name" class="form-control" placeholder="Full Name"/>
+                    <input type="email" id="email" class="form-control" placeholder="Email" required/>
+                    <input type="password" id="password" class="form-control" placeholder="Password"/>
+                    <input type="password" id="pass2" class="form-control" placeholder="Confirm Password"/>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="pre" id="exampleRadios1" value="Student" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                         Student
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="pre" id="exampleRadios2" value="Techer">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Techer
+                        </label>
+                    </div>
+
+                    <input type="submit" class="form-control btn btn-primary" value="Sign up"/>
+
+                    <p>already have an account ? <a href="../index.html">login</a></p>
+                </form>
+                
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/all.js"></script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <title>Moodel - Login </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/all.css"/>
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+    </head>
+    <body>
+        <div class="login">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-8 col-md-12 txt">
+                        <div class="logo">
+                            <img src="img/universit.png" width="60" alt="logo"/>
+                        </div>
+                        <h1>Hello There </h1>
+                        <h5>Welcome To Our Website Moodel</h5>
+                        <div class="copyright">
+                            <p>&#169; copyright 2019 .</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-12 lgnFrm">
+                        <form action="" method="POST" name="login" onsubmit="return getInfo()">
+                            <div class="icon text-center">
+                                 <img src="img/password.png" alt="login" width="200px" />
+                            </div>
+                            <input type="text" name="username" class="form-control" placeholder="User Name" >
+                            <input type="password" name="password" class="form-control" placeholder="Password">
+                            
+                            <input type="submit" id="login" value="Login" class="form-control btn btn-primary">
+                            <div id="val"></div>
+                            <p>Dont have an account ? <a href="/folders/signup.html">Sign up</a></p>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/all.js"></script>
+    </body>
+</html>
