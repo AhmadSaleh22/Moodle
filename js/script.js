@@ -58,7 +58,7 @@ function getInfo() {
 
     if (login == false) {
         if (pre[1] == "std") {
-            window.location.href = "/folders/student.html";
+            window.location.href = "folders/student.html";
             return false;
         } else if (pre[1] == "iug") {
             window.location.href = "folders/techer.html";
